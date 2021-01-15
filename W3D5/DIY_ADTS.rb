@@ -16,3 +16,13 @@ class Stack
     @stack.first
   end
 end
+
+#######################################
+
+class Queue
+
+  def initialize
+    @queue = []
+  end
+
+end
