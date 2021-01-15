@@ -4,6 +4,9 @@ class Stack
     @stack = []
   end
 
-  
+  def push(el)
+    @stack << el
+  end
+
 
 end
