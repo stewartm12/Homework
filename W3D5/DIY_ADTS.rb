@@ -67,4 +67,19 @@ class Map
     @array.reject! { |sub| sub[0] == key }
   end
 
+  def show
+    deep_dup(@array)
+  end
+
+  
+  def deep_dup(arr)
+    arr.map do |sub_arr|
+      if sub_arr.is_a?(Array)
+        deep_dup(sub_arr)
+      else  
+        sub_arr
+      end
+    end
+  end 
+
 end
