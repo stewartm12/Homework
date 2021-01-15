@@ -29,5 +29,7 @@ class Queue
     @queue << el
   end
 
-  
+  def dequeue
+    @queue.shift
+  end
 end
