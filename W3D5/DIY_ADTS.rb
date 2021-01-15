@@ -59,6 +59,8 @@ class Map
     @array.each do |sub|
       return sub[1] if sub[0] == key
     end
+
+    nil
   end
 
 end
