@@ -25,4 +25,9 @@ class Queue
     @queue = []
   end
 
+  def enqueue(el)
+    @queue << el
+  end
+
+  
 end
