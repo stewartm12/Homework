@@ -55,4 +55,10 @@ class Map
     @array
   end
 
+  def get(key)
+    @array.each do |sub|
+      return sub[1] if sub[0] == key
+    end
+  end
+
 end
