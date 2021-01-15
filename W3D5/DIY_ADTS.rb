@@ -12,4 +12,7 @@ class Stack
     @stack.pop
   end
 
+  def peek
+    @stack.first
+  end
 end
