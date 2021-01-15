@@ -63,4 +63,8 @@ class Map
     nil
   end
 
+  def delete(key)
+    @array.reject! { |sub| sub[0] == key }
+  end
+
 end
