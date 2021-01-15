@@ -46,4 +46,13 @@ class Map
     @array = []
   end
 
+  def set(key, value)
+    @array.each do |sub|
+      sub.each { |ele| sub[1] = value if sub[0] == key } 
+    end
+
+    @array << [key, value] if !@array.include?([key, value])
+    @array
+  end
+
 end
