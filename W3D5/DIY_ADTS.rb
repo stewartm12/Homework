@@ -8,5 +8,8 @@ class Stack
     @stack << el
   end
 
+  def pop
+    @stack.pop
+  end
 
 end
