@@ -26,10 +26,6 @@ def bfs(starting_node, target_value)
   nil
 end
 
-
-
-
-
 a = GraphNode.new('a')
 b = GraphNode.new('b')
 c = GraphNode.new('c')
@@ -41,4 +37,3 @@ c.neighbors = [b, d]
 e.neighbors = [a]
 f.neighbors = [e]
 
-p bfs(a, "f")
