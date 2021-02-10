@@ -1,0 +1,10 @@
+<h2>You are on the bands index page</h2>
+
+<ul>
+  <% @bands.each do |band| %>
+    <li>
+      <%= band.name %>
+    </li>
+
+  <% end %>
+</ul>

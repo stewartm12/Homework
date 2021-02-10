@@ -1,0 +1,20 @@
+<h3>Log in dear user</h3>
+
+<form action="<%= session_url %>" method="post">
+  <%= form_auth_token %>
+
+  <label for="email">Please Enter Your Email</label>
+  <input type="text" name="user[email]" id="email" value="<%= @user.email %>">
+
+  <br>
+  <br>
+
+  <label for="password">Please Enter Your Password</label>
+  <input type="password" name="user[password]" id="password" value="<%= @user.password %>">
+
+  <br>
+  <br>
+
+  <button>log in</button>
+
+</form> 
